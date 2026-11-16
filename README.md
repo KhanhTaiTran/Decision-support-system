@@ -1,10 +1,10 @@
-# DSS chọn phòng trọ cho sinh viên
+# Student Housing Decision Support System
 
-Final project: hệ thống hỗ trợ quyết định đa tiêu chí bằng TOPSIS. Seminar bắt đầu **12/12/2026**. Mục tiêu: demo MVP **22/11**, chốt tính năng **29/11**, report và slide **07/12**.
+A final project using TOPSIS for multi-criteria housing decisions. Seminars begin on **December 12, 2026**. Milestones: MVP demo on **November 22**, feature freeze on **November 29**, final report and slides on **December 7**.
 
-## Chạy trên máy cá nhân
+## Local setup
 
-Cần Python 3.11 trở lên và Git. Chạy lần lượt trong PowerShell:
+Install Python 3.11 or later and Git. Run these commands in PowerShell:
 
 ```powershell
 git clone https://github.com/KhanhTaiTran/Decision-support-system.git
@@ -14,69 +14,69 @@ python -m venv .venv
 .\.venv\Scripts\python.exe -m streamlit run app.py
 ```
 
-macOS/Linux: thay `.\.venv\Scripts\python.exe` bằng `.venv/bin/python`.
+On macOS/Linux, replace `.\.venv\Scripts\python.exe` with `.venv/bin/python`.
+Virtual environment activation is optional. Stop the application with Ctrl+C.
 
-Không cần kích hoạt virtualenv. Dừng ứng dụng bằng Ctrl+C.
+On Windows, use the official Python distribution from python.org. If `python` resolves to MSYS2/Git Bash and creates `.venv/bin` instead of `.venv/Scripts`, use `py -3 -m venv .venv` with the official Python installation to avoid compiling dependencies from source.
 
-Trên Windows nên dùng Python chính thức từ python.org. Nếu lệnh `python` trỏ tới MSYS2/Git Bash và tạo `.venv/bin` thay vì `.venv/Scripts`, dùng `py -3 -m venv .venv` từ Python chính thức để tránh phải tự biên dịch thư viện.
-
-## Cấu trúc
+## Project structure
 
 ```text
-app.py                       # Giao diện Streamlit và tích hợp
+app.py                       # Streamlit interface and integration
 src/housing_dss/
-  criteria.py                # Tên tiêu chí, đơn vị và cost/benefit
-  data.py                    # Đọc và kiểm tra CSV
-  topsis.py                  # Hàm xếp hạng độc lập UI
+  criteria.py                # Labels, units, and cost/benefit directions
+  data.py                    # CSV loading and validation
+  topsis.py                  # Ranking algorithm independent of the UI
 data/
-  rooms_sample.csv           # 8 phòng giả lập cho bản khởi tạo
-  README.md                  # Schema và rubric chấm điểm
-tests/                       # Test thuật toán và dữ liệu
-docs/                        # Phương pháp, report, slide, demo
-.github/workflows/tests.yml  # Chạy test khi push/PR
+  rooms_sample.csv           # Eight synthetic rooms for the starter demo
+  README.md                  # Data schema and scoring rubric
+tests/                       # Algorithm and data tests
+docs/                        # Methodology, report, slides, and demo materials
+.github/workflows/tests.yml  # Automated checks on pushes and pull requests
 ```
 
-## Phân công module
+## Module ownership
 
-- **Hồ Ngọc An**: `data/`, yêu cầu và nội dung report. Mở rộng 30–50 phòng và kiểm tra nguồn dữ liệu.
-- **Châu Thành Phát**: `src/housing_dss/topsis.py`, phương pháp và phân tích độ nhạy.
-- **Trần Khánh Tài**: `app.py`, đóng gói, giao diện, import/export CSV và tích hợp.
-- **Trần Việt Trung**: `tests/`, kịch bản demo, test tích hợp và video dự phòng.
+- **Hồ Ngọc An**: `data/`, requirements, and report coordination. Expand the dataset to 30–50 rooms and document sources.
+- **Châu Thành Phát**: `src/housing_dss/topsis.py`, methodology, and sensitivity analysis.
+- **Trần Khánh Tài**: `app.py`, packaging, interface, CSV import/export, and integration.
+- **Trần Việt Trung**: `tests/`, demo scenarios, integration testing, and backup video.
 
-Thay đổi schema hoặc chữ ký hàm cần trao đổi trước với người tích hợp. Mỗi người viết phần report tương ứng công việc mình thực hiện.
+Coordinate schema and function signature changes with the integration owner. Each member writes the report section covering their own contribution.
+All project documentation, interface text, messages, comments, and presentation materials must be written in English. Preserve team members' names as provided.
 
-[Kế hoạch Google Sheets và deadline](https://docs.google.com/spreadsheets/d/1wgrpr-N_P16rFBHk9lmXNfw0crfg0Z2PDYrWAIVx7LE/edit)
+[Google Sheets project plan and deadlines](https://docs.google.com/spreadsheets/d/1wgrpr-N_P16rFBHk9lmXNfw0crfg0Z2PDYrWAIVx7LE/edit)
 
-## Làm việc bằng branch và pull request
+## Branches and pull requests
 
-Mỗi đầu việc tạo branch riêng, ví dụ:
+Create a separate branch for each task:
 
 ```powershell
 git switch main
 git pull --ff-only
 git switch -c feat/topsis-sensitivity
-# sửa file, chạy test rồi commit
+# Edit files and run tests before committing.
 git add src/housing_dss/topsis.py tests/test_topsis.py
 git commit -m "Add sensitivity comparison"
 git push -u origin feat/topsis-sensitivity
 ```
 
-Mở pull request vào `main`, nhờ một bạn review và đợi CI xanh rồi merge. Không force push lên `main`. Chủ repo cần cấp quyền cộng tác cho 3 bạn còn lại trong GitHub Settings → Collaborators.
+Open a pull request into `main`, request a teammate's review, and wait for CI to pass before merging. Do not force-push to `main`. The repository owner must invite the other three members through GitHub Settings → Collaborators.
 
-## Kiểm tra trước khi push
+## Checks before pushing
 
 ```powershell
 .\.venv\Scripts\python.exe -m unittest discover -s tests -v
 .\.venv\Scripts\python.exe -m compileall -q app.py src tests
 ```
 
-## Phạm vi bản khởi tạo
+## Starter scope
 
-Đã có lọc ngân sách, điều chỉnh 5 trọng số, TOPSIS, top 3 và bảng bước tính. Dữ liệu là giả lập. Điểm xếp hạng phụ thuộc tập ứng viên, không phải xác suất phù hợp. Đồng hạng sắp theo ID; tập không có khác biệt nhận điểm 0,5. Không có phòng thì gợi ý tăng ngân sách.
+The starter implements budget filtering, five adjustable criterion weights, TOPSIS ranking, the top three options, and calculation details. Data is synthetic. Scores depend on the candidate set and are not probabilities of suitability. Ties are displayed by ID; indistinguishable alternatives receive 0.5. An empty candidate set prompts the user to increase their budget.
 
-Các phần team tiếp tục: mở rộng dữ liệu, ví dụ tính tay độc lập, import/export, so sánh 3 bộ trọng số, cải thiện giải thích, report và slide. Không thêm login, thanh toán, scraping hoặc API bản đồ trong phạm vi hiện tại.
+Remaining team tasks: expand the dataset, verify an independently calculated example, add CSV import/export, compare three weight profiles, improve explanations, and prepare the report and slides. Authentication, payments, scraping, and map APIs are outside the current scope.
 
-## Tài liệu tham khảo
+## References
 
 - [Streamlit: Create an app](https://docs.streamlit.io/get-started/tutorials/create-an-app)
 - [Towards Explainable TOPSIS](https://arxiv.org/abs/2306.07706)

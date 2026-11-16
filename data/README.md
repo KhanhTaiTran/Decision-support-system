@@ -1,14 +1,14 @@
-# Dữ liệu phòng trọ
+# Housing dataset
 
-`rooms_sample.csv` chứa 8 phòng **giả lập**, chỉ để chạy bản khởi tạo. An mở rộng lên 30–50 phòng theo kế hoạch. Tất cả khoảng cách lấy cùng một điểm trường giả định. Không coi đây là dữ liệu thị trường.
+`rooms_sample.csv` contains eight **synthetic** rooms for the starter application. An will expand it to 30–50 rooms according to the project plan. All distances use the same hypothetical campus reference point. These records are not market data.
 
-- `id`: duy nhất, không rỗng.
-- `name`: tên phòng, không rỗng.
-- `monthly_cost_vnd`: tổng tiền thuê và phí cố định ước tính mỗi tháng, VND, > 0. Tiêu chí cost.
-- `distance_km`: khoảng cách tới trường, km, >= 0. Tiêu chí cost.
-- `area_m2`: diện tích sử dụng, m², > 0. Tiêu chí benefit.
-- `security_score`: số nguyên 1–5, bằng 1 + số điều kiện đạt: khóa riêng, kiểm soát ra vào, camera khu chung, chiếu sáng lối vào.
-- `amenities_score`: số nguyên 1–5, bằng 1 + số điều kiện đạt: WC riêng, chỗ nấu ăn, wifi, chỗ để xe.
-- `source`: `synthetic` cho phòng giả lập. Dữ liệu thật cần URL nguồn và ngày thu thập trong các cột mở rộng.
+- `id`: unique, nonempty identifier.
+- `name`: nonempty room name.
+- `monthly_cost_vnd`: rent plus estimated fixed monthly fees, VND, > 0. Cost criterion.
+- `distance_km`: distance to campus, km, >= 0. Cost criterion.
+- `area_m2`: usable floor area, m², > 0. Benefit criterion.
+- `security_score`: integer from 1 to 5, calculated as 1 plus the number of conditions met: private lock, controlled access, common-area cameras, and entrance lighting.
+- `amenities_score`: integer from 1 to 5, calculated as 1 plus the number of conditions met: private bathroom, cooking area, Wi-Fi, and parking.
+- `source`: `synthetic` for generated records. Real records require a source URL and collection date in additional columns.
 
-CSV dùng UTF-8. Không đưa dữ liệu cá nhân hoặc thông tin liên hệ riêng lên repo. Không trộn dữ liệu thật và giả lập mà thiếu nhãn nguồn.
+Use UTF-8 CSV files and English room labels. Do not commit personal data or private contact details. Clearly identify sources when combining real and synthetic records.

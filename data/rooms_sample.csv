@@ -1,9 +1,9 @@
 id,name,monthly_cost_vnd,distance_km,area_m2,security_score,amenities_score,source
-R01,Phòng mẫu 01,2500000,4.5,18,3,3,synthetic
-R02,Phòng mẫu 02,3200000,2.0,22,4,4,synthetic
-R03,Phòng mẫu 03,4000000,0.8,26,5,5,synthetic
-R04,Phòng mẫu 04,2800000,3.0,20,4,2,synthetic
-R05,Phòng mẫu 05,3500000,1.5,24,3,5,synthetic
-R06,Phòng mẫu 06,2200000,6.0,16,3,2,synthetic
-R07,Phòng mẫu 07,4500000,0.5,30,5,5,synthetic
-R08,Phòng mẫu 08,3000000,2.5,25,4,3,synthetic
+R01,Sample room 01,2500000,4.5,18,3,3,synthetic
+R02,Sample room 02,3200000,2.0,22,4,4,synthetic
+R03,Sample room 03,4000000,0.8,26,5,5,synthetic
+R04,Sample room 04,2800000,3.0,20,4,2,synthetic
+R05,Sample room 05,3500000,1.5,24,3,5,synthetic
+R06,Sample room 06,2200000,6.0,16,3,2,synthetic
+R07,Sample room 07,4500000,0.5,30,5,5,synthetic
+R08,Sample room 08,3000000,2.5,25,4,3,synthetic

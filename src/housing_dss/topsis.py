@@ -7,15 +7,15 @@ from .criteria import CRITERIA
 def rank_rooms(rooms: list[dict], weights: dict[str, float]) -> list[dict]:
     keys = list(CRITERIA)
     if set(weights) != set(keys):
-        raise ValueError("Cần trọng số cho đúng 5 tiêu chí.")
+        raise ValueError("Provide weights for exactly the five supported criteria.")
     weight_values = [float(weights[key]) for key in keys]
     if any(not math.isfinite(w) or w < 0 for w in weight_values) or sum(weight_values) == 0:
-        raise ValueError("Trọng số phải không âm, hữu hạn và có tổng lớn hơn 0.")
+        raise ValueError("Weights must be nonnegative and finite, with a positive total.")
     if not rooms:
         return []
     matrix = [[float(room[key]) for key in keys] for room in rooms]
     if any(not math.isfinite(x) or x < 0 for row in matrix for x in row):
-        raise ValueError("Giá trị tiêu chí phải hữu hạn và không âm.")
+        raise ValueError("Criterion values must be finite and nonnegative.")
     total = sum(weight_values)
     weights_normalized = [w / total for w in weight_values]
     norms = [math.hypot(*(row[j] for row in matrix)) for j in range(len(keys))]

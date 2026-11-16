@@ -14,5 +14,5 @@ class DataTests(unittest.TestCase):
             path = Path(temp) / 'rooms.csv'
             path.write_text('id,name,source,monthly_cost_vnd,distance_km,area_m2,security_score,amenities_score\n'
                             'A,Room,synthetic,100,1,20,3,3\nA,Room,synthetic,200,2,30,4,4\n', encoding='utf-8')
-            with self.assertRaisesRegex(ValueError, 'ID trùng'):
+            with self.assertRaisesRegex(ValueError, 'duplicate ID'):
                 load_rooms(path)

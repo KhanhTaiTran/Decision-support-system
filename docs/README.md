@@ -1,14 +1,14 @@
-# Report và seminar
+# Report and seminar materials
 
-Đặt tài liệu của nhóm ở đây, đặt tên rõ nội dung và người phụ trách. Không coi nội dung dự kiến là kết quả đã thực hiện.
+Store team documents here using descriptive filenames. Write all materials in English. Distinguish planned work from results actually obtained.
 
-Report bắt đầu viết từ 30/11, bản ghép 04/12, review 05/12, chốt PDF 07/12:
+Start report writing on November 30, assemble the first complete draft by December 4, review on December 5, and finalize the PDF by December 7, 2026:
 
-1. Bài toán, mục tiêu, yêu cầu và dữ liệu — Hồ Ngọc An.
-2. Phương pháp TOPSIS và ví dụ tính tay — Châu Thành Phát.
-3. Kiến trúc, cài đặt và giao diện — Trần Khánh Tài.
-4. Kiểm thử, kết quả, giới hạn và kết luận — Trần Việt Trung.
+1. Problem, objectives, requirements, and data — Hồ Ngọc An.
+2. TOPSIS methodology and a manually calculated example — Châu Thành Phát.
+3. Architecture, implementation, and interface — Trần Khánh Tài.
+4. Testing, results, limitations, and conclusions — Trần Việt Trung.
 
-Slide chốt 07/12. Presentation 20 phút: An 4 phút, Phát 6 phút, Tài 5 phút, Trung 5 phút. Demo tách riêng, dự kiến 3–5 phút và cần xác nhận thời lượng với giảng viên. Tập ngày 08 và 10/12, dự phòng 11/12.
+Finalize slides by December 7. The presentation lasts 20 minutes: An 4 minutes, Phát 6 minutes, Tài 5 minutes, and Trung 5 minutes. The separate demonstration is planned for 3–5 minutes; confirm its time limit with the instructor. Rehearse on December 8 and 10, with December 11 reserved as a buffer.
 
-Demo chính: chọn ngân sách → chỉnh trọng số → xem top 3 và bước tính → đổi mức ưu tiên → giải thích thứ hạng. Chuẩn bị video và dữ liệu offline. Mỗi nhóm phải hỏi ít nhất một câu khi nhóm khác trình bày.
+Main demo: set a budget → adjust weights → inspect the top three rooms and calculation details → change priorities → explain the ranking. Prepare an offline video and dataset. Each group must ask at least one question during another group's presentation.
