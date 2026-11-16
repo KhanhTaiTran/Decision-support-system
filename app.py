@@ -37,11 +37,11 @@ def display(rows):
              **{labels[key]: room[key] for key in CRITERIA},
              "Điểm TOPSIS": round(room["score"], 4)} for room in rows]
 
-st.dataframe(display(ranked[:3]), use_container_width=True, hide_index=True)
+st.dataframe(display(ranked[:3]), width="stretch", hide_index=True)
 st.caption("Điểm thể hiện thứ hạng tương đối trong tập phòng hiện tại, không phải xác suất phù hợp. "
            "Các phòng đồng hạng được hiển thị theo ID. Trường hợp không có khác biệt, điểm là 0,5.")
 with st.expander("Toàn bộ kết quả"):
-    st.dataframe(display(ranked), use_container_width=True, hide_index=True)
+    st.dataframe(display(ranked), width="stretch", hide_index=True)
 with st.expander("Cách tính và trọng số đang dùng"):
     total = sum(weights.values())
     st.write({labels[key]: f"{value / total:.1%}" for key, value in weights.items()})
