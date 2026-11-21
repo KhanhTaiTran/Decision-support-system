@@ -1,6 +1,6 @@
 # Student Housing Decision Support System
 
-A final project using TOPSIS for multi-criteria housing decisions. Seminars begin on **December 12, 2026**. Milestones: MVP demo on **November 22**, feature freeze on **November 29**, final report and slides on **December 7**.
+A final project using TOPSIS for multi-criteria housing decisions. Seminars begin on **December 12, 2026**. The team begins work on **November 21**; the immediate target is a validated Week 1 baseline by **November 27**. The remaining timeline will be set after the first team review.
 
 ## Local setup
 
@@ -46,6 +46,8 @@ Coordinate schema and function signature changes with the integration owner. Eac
 All project documentation, interface text, messages, comments, and presentation materials must be written in English. Preserve team members' names as provided.
 
 [Google Sheets project plan and deadlines](https://docs.google.com/spreadsheets/d/1wgrpr-N_P16rFBHk9lmXNfw0crfg0Z2PDYrWAIVx7LE/edit)
+
+[Week 1 plan: November 21–27](docs/week-1-plan.md)
 
 ## Branches and pull requests
 
