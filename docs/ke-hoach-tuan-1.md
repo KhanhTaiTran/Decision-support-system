@@ -1,7 +1,5 @@
 # Kế hoạch tuần 1: 23–29/11/2026
 
-> Đây là tài liệu làm việc nội bộ bằng tiếng Việt. Mã nguồn, giao diện app, README chính, report và slide vẫn dùng tiếng Anh.
-
 ## 1. Mục tiêu thật sự của tuần này
 
 Cuối tuần, nhóm cần có một bản **chạy được từ đầu đến cuối**, không cần đẹp và chưa cần nhiều chức năng:

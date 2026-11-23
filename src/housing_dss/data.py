@@ -1,5 +1,3 @@
-"""CSV boundary: validate once before passing records to the ranking model."""
-
 import csv
 import math
 from pathlib import Path

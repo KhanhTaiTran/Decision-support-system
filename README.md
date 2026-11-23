@@ -1,6 +1,13 @@
 # Student Housing Decision Support System
 
-A final project using TOPSIS for multi-criteria housing decisions. Seminars begin on **December 12, 2026**. The team begins work on **November 21**; the immediate target is a validated Week 1 baseline by **November 27**. The remaining timeline will be set after the first team review.
+A Model-driven Decision Support System (DSS) using vector-normalized TOPSIS for multi-criteria student accommodation selection. Developed for the Information Systems Management (ISM) course at International University (VNU-HCM).
+
+### Key Milestones:
+- **November 22, 2026:** Baseline MVP operational (budget filter, priority sliders, TOPSIS ranking, calculation details).
+- **November 29, 2026:** Feature freeze (30 synthetic rooms, weight presets, manual verification).
+- **December 07, 2026:** Final report (PDF) and 20-minute presentation slides sign-off.
+- **December 08–10, 2026:** Timed group rehearsals (20 min) and Q&A defense preparation.
+- **December 12, 2026:** Final seminar presentation and live demonstration.
 
 ## Local setup
 
@@ -48,9 +55,10 @@ docs/                        # Methodology, report, slides, and demo materials
 Coordinate schema and function signature changes with the integration owner. Each member writes the report section covering their own contribution.
 All project documentation, interface text, messages, comments, and presentation materials must be written in English. Preserve team members' names as provided.
 
-[Google Sheets project plan and deadlines](https://docs.google.com/spreadsheets/d/1wgrpr-N_P16rFBHk9lmXNfw0crfg0Z2PDYrWAIVx7LE/edit)
-
-[Detailed internal Week 1 plan (Vietnamese)](docs/ke-hoach-tuan-1.md)
+### Documentation & Planning Links
+- [Detailed Internal Week 1 Plan (Vietnamese)](docs/ke-hoach-tuan-1.md)
+- [Report Structure & Seminar Presentation Guidelines](docs/README.md)
+- [Dataset Schema & Scoring Rubric](data/README.md)
 
 ## Branches and pull requests
 
@@ -75,11 +83,22 @@ Open a pull request into `main`, request a teammate's review, and wait for CI to
 .\.venv\Scripts\python.exe -m compileall -q app.py src tests
 ```
 
-## Starter scope
+## Project Scope & Implementation Status
 
-The starter implements budget filtering, five adjustable criterion weights, TOPSIS ranking, the top three options, and calculation details. Data is synthetic. Scores depend on the candidate set and are not probabilities of suitability. Ties are displayed by ID; indistinguishable alternatives receive 0.5. An empty candidate set prompts the user to increase their budget.
+The application provides:
+- Hard budget filtering before TOPSIS ranking.
+- Five adjustable criterion weights with automatic vector normalization.
+- TOPSIS ranking showing top 3 options, all eligible results, and calculation details ($D^+$, $D^-$, and relative closeness score $C_i$).
+- A verified baseline dataset of 30 synthetic rooms with explicit scoring rubrics.
 
-Remaining team tasks: expand the dataset, verify an independently calculated example, add CSV import/export, compare three weight profiles, improve explanations, and prepare the report and slides. Authentication, payments, scraping, and map APIs are outside the current scope.
+**Key tasks before final seminar:**
+- Verify an independently hand-calculated 3-room example (`docs/topsis-worked-example.md`).
+- Implement 3 preset weight profiles (Budget-focused, Campus-focused, Space/Amenities-focused) for instant sensitivity demonstration.
+- Add CSV export of ranked results and custom CSV upload support.
+- Finalize the complete 25–35 page academic report (PDF) and 20-minute presentation slides (18–20 slides).
+- Record an offline demonstration video backup.
+
+**Explicitly outside scope:** User authentication, payment processing, web scraping, and live map/geocoding APIs.
 
 ## References
 
