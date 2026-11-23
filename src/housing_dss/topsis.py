@@ -1,10 +1,10 @@
 """Vector-normalized TOPSIS. No UI or file access in this module."""
 
 import math
+from collections.abc import Mapping
 from .criteria import CRITERIA
 
-
-def rank_rooms(rooms: list[dict], weights: dict[str, float]) -> list[dict]:
+def rank_rooms(rooms: list[dict], weights: Mapping[str, float]) -> list[dict]:
     keys = list(CRITERIA)
     if set(weights) != set(keys):
         raise ValueError("Provide weights for exactly the five supported criteria.")
