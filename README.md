@@ -3,10 +3,10 @@
 A Model-driven Decision Support System (DSS) using vector-normalized TOPSIS for multi-criteria student accommodation selection. Developed for the Information Systems Management (ISM) course at International University (VNU-HCM).
 
 ### Key Milestones:
-- **November 22, 2026:** Baseline MVP operational (budget filter, priority sliders, TOPSIS ranking, calculation details).
-- **November 29, 2026:** Feature freeze (30 synthetic rooms, weight presets, manual verification).
-- **December 07, 2026:** Final report (PDF) and 20-minute presentation slides sign-off.
-- **December 08–10, 2026:** Timed group rehearsals (20 min) and Q&A defense preparation.
+- **November 23 – December 06, 2026 (Weeks 1 & 2):** Comprehensive Engineering Sprint (core features, preset profiles, visual comparison charts, CSV import/export, edge-case testing, offline video demo, final code freeze on Dec 06).
+- **December 07 – 09, 2026 (Week 3):** Final report writing (25–35 pages, 7 chapters) and PDF sign-off.
+- **December 09 – 10, 2026:** Presentation slides (18–20 slides) and timed group rehearsals (20 min).
+- **December 11, 2026:** University portal submission and dual USB backup.
 - **December 12, 2026:** Final seminar presentation and live demonstration.
 
 ## Local setup
@@ -56,7 +56,7 @@ Coordinate schema and function signature changes with the integration owner. Eac
 All project documentation, interface text, messages, comments, and presentation materials must be written in English. Preserve team members' names as provided.
 
 ### Documentation & Planning Links
-- [Detailed Internal Week 1 Plan (Vietnamese)](docs/ke-hoach-tuan-1.md)
+- [Master Project Roadmap (Nov 23 – Dec 12, 2026)](docs/ke-hoach-tong-the.md)
 - [Report Structure & Seminar Presentation Guidelines](docs/README.md)
 - [Dataset Schema & Scoring Rubric](data/README.md)
 
