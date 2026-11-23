@@ -27,6 +27,9 @@ src/housing_dss/
   criteria.py                # Labels, units, and cost/benefit directions
   data.py                    # CSV loading and validation
   topsis.py                  # Ranking algorithm independent of the UI
+  ui/                        # Streamlit presentation modules
+    preferences.py           # Budget and priority controls in the sidebar
+    results.py               # Ranked-room tables and calculation details
 data/
   rooms_sample.csv           # Thirty synthetic rooms for the starter demo
   README.md                  # Data schema and scoring rubric
