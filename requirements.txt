@@ -1,0 +1,3 @@
+# Runtime dependency for the Student Housing Decision Support System.
+# CSV validation and TOPSIS use only the Python standard library.
+streamlit>=1.50,<2
