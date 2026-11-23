@@ -1,6 +1,6 @@
 # Housing dataset
 
-`rooms_sample.csv` contains eight **synthetic** rooms for the starter application. An will expand it to 30–50 rooms according to the project plan. All distances use the same hypothetical campus reference point. These records are not market data.
+`rooms_sample.csv` contains thirty **synthetic** rooms for the starter application. The shared dataset is prepared before the Week 1 work plan begins. All distances use the same hypothetical campus reference point. These records are not market data.
 
 - `id`: unique, nonempty identifier.
 - `name`: nonempty room name.

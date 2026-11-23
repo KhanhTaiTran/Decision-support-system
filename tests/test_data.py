@@ -6,7 +6,7 @@ from housing_dss.data import load_rooms
 class DataTests(unittest.TestCase):
     def test_sample_loads(self):
         rooms = load_rooms(Path(__file__).resolve().parents[1] / 'data' / 'rooms_sample.csv')
-        self.assertEqual(len(rooms), 8)
+        self.assertEqual(len(rooms), 30)
         self.assertTrue(all(room['source'] == 'synthetic' for room in rooms))
 
     def test_duplicate_id_rejected(self):

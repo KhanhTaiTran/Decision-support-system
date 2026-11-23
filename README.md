@@ -28,7 +28,7 @@ src/housing_dss/
   data.py                    # CSV loading and validation
   topsis.py                  # Ranking algorithm independent of the UI
 data/
-  rooms_sample.csv           # Eight synthetic rooms for the starter demo
+  rooms_sample.csv           # Thirty synthetic rooms for the starter demo
   README.md                  # Data schema and scoring rubric
 tests/                       # Algorithm and data tests
 docs/                        # Methodology, report, slides, and demo materials
@@ -37,7 +37,7 @@ docs/                        # Methodology, report, slides, and demo materials
 
 ## Module ownership
 
-- **Hồ Ngọc An**: `data/`, requirements, and report coordination. Expand the dataset to 30–50 rooms and document sources.
+- **Hồ Ngọc An**: requirements and report coordination.
 - **Châu Thành Phát**: `src/housing_dss/topsis.py`, methodology, and sensitivity analysis.
 - **Trần Khánh Tài**: `app.py`, packaging, interface, CSV import/export, and integration.
 - **Trần Việt Trung**: `tests/`, demo scenarios, integration testing, and backup video.
@@ -47,7 +47,7 @@ All project documentation, interface text, messages, comments, and presentation 
 
 [Google Sheets project plan and deadlines](https://docs.google.com/spreadsheets/d/1wgrpr-N_P16rFBHk9lmXNfw0crfg0Z2PDYrWAIVx7LE/edit)
 
-[Week 1 plan: November 21–27](docs/week-1-plan.md)
+[Detailed internal Week 1 plan (Vietnamese)](docs/ke-hoach-tuan-1.md)
 
 ## Branches and pull requests
 

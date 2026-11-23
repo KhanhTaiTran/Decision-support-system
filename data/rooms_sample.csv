@@ -1,9 +1,31 @@
 id,name,monthly_cost_vnd,distance_km,area_m2,security_score,amenities_score,source
-R01,Sample room 01,2500000,4.5,18,3,3,synthetic
-R02,Sample room 02,3200000,2.0,22,4,4,synthetic
-R03,Sample room 03,4000000,0.8,26,5,5,synthetic
-R04,Sample room 04,2800000,3.0,20,4,2,synthetic
-R05,Sample room 05,3500000,1.5,24,3,5,synthetic
-R06,Sample room 06,2200000,6.0,16,3,2,synthetic
-R07,Sample room 07,4500000,0.5,30,5,5,synthetic
-R08,Sample room 08,3000000,2.5,25,4,3,synthetic
+R01,Maple Studio,2500000,4.5,18,3,3,synthetic
+R02,Cedar Room,3200000,2.0,22,4,4,synthetic
+R03,Campus View Studio,4000000,0.8,26,5,5,synthetic
+R04,Orchid Room,2800000,3.0,20,4,2,synthetic
+R05,Lotus Apartment,3500000,1.5,24,3,5,synthetic
+R06,Budget Corner,2200000,6.0,16,3,2,synthetic
+R07,Riverside Suite,4500000,0.5,30,5,5,synthetic
+R08,Garden Room,3000000,2.5,25,4,3,synthetic
+R09,Sunrise Studio,2700000,3.7,19,2,4,synthetic
+R10,Quiet Lane Room,3100000,2.8,21,4,3,synthetic
+R11,Metro Apartment,3800000,1.2,23,4,5,synthetic
+R12,Green Park Room,2600000,5.1,20,3,3,synthetic
+R13,Willow Studio,3400000,2.2,27,4,4,synthetic
+R14,Compact Room,1900000,7.5,12,2,1,synthetic
+R15,Central House,4200000,0.9,22,5,4,synthetic
+R16,Balcony Studio,3600000,3.3,28,3,4,synthetic
+R17,Student Home,2400000,4.0,17,3,3,synthetic
+R18,Station Room,3300000,1.8,19,4,2,synthetic
+R19,Lake View Apartment,4700000,2.7,32,4,5,synthetic
+R20,Shared House Room,2100000,5.8,15,3,4,synthetic
+R21,Corner Studio,2900000,3.1,23,2,4,synthetic
+R22,Premium Mini Flat,5000000,1.0,29,5,5,synthetic
+R23,Alley Room,2300000,6.4,16,2,2,synthetic
+R24,Bright Apartment,3900000,2.4,26,4,5,synthetic
+R25,Campus Edge Room,3000000,1.4,18,3,3,synthetic
+R26,Spacious Studio,4100000,4.2,34,4,4,synthetic
+R27,Value Room,2000000,7.0,14,3,2,synthetic
+R28,Metro Garden Room,3700000,1.9,25,5,3,synthetic
+R29,Family House Room,2800000,4.8,24,3,4,synthetic
+R30,Skyline Studio,4400000,0.7,27,5,4,synthetic
