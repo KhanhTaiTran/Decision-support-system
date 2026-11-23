@@ -2,12 +2,10 @@
 
 A Model-driven Decision Support System (DSS) using vector-normalized TOPSIS for multi-criteria student accommodation selection. Developed for the Information Systems Management (ISM) course at International University (VNU-HCM).
 
-### Key Milestones:
-- **November 23 – December 06, 2026 (Weeks 1 & 2):** Comprehensive Engineering Sprint (core features, preset profiles, visual comparison charts, CSV import/export, edge-case testing, offline video demo, final code freeze on Dec 06).
-- **December 07 – 09, 2026 (Week 3):** Final report writing (25–35 pages, 7 chapters) and PDF sign-off.
-- **December 09 – 10, 2026:** Presentation slides (18–20 slides) and timed group rehearsals (20 min).
-- **December 11, 2026:** University portal submission and dual USB backup.
-- **December 12, 2026:** Final seminar presentation and live demonstration.
+### Project Delivery Pipeline (Target: December 12, 2026):
+- **Phase 1 (Core Essentials):** Preset weight profiles, custom CSV upload & export, Top-3 visual highlight cards, manual mathematical benchmark, and 100% test automation.
+- **Phase 2 (Advanced Extensions):** Real rental web scraping, interactive campus accommodation map, and visual criterion radar/bar charts.
+- **Phase 3 (Final Delivery):** 25–35 page academic report (PDF), 18–20 slide presentation deck (20 min), offline video demo, and final seminar defense on **December 12, 2026**.
 
 ## Local setup
 
