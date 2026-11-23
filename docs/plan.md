@@ -94,10 +94,10 @@
   7. Tính **Khoảng cách Euclidean $D^+$ và $D^-$**:
      * $D^+_i = \sqrt{\sum (v_{ij} - v^+_j)^2}$; $D^-_i = \sqrt{\sum (v_{ij} - v^-_j)^2}$.
   8. Tính **Điểm tương đồng tương đối $C_i$**: $C_i = \frac{D^-_i}{D^+_i + D^-_i}$.
-* **Đầu ra:** 1 bảng tính Markdown/Excel có đầy đủ các bước trên $\rightarrow$ Đưa vào **Chapter 4 của Report** và **Slide thuyết trình của Phát (6 phút)**.
+* **Đầu ra:** 1 bảng tính Markdown/Excel có đầy đủ các bước trên $\rightarrow$ Đưa vào **Chapter 4 của Report** và **Slide thuyết trình**.
 
 ### 3.2. Hồ Ngọc An — Chuẩn hóa Dữ liệu & Rubric Chấm điểm
-* **Mục đích:** Khi giảng viên hỏi: *"Dữ liệu 30 phòng này ở đâu ra? Điểm Security và Amenities dựa vào cơ sở nào mà chấm?"*, An giải thích được quy tắc tính điểm khoa học, minh bạch.
+* **Mục đích:** Khi giảng viên hỏi: *"Dữ liệu 30 phòng này ở đâu ra? Điểm Security và Amenities dựa vào cơ sở nào mà chấm?"*, giải thích được quy tắc tính điểm khoa học, minh bạch.
 * **Các bước thực hiện cụ thể:**
   1. **Quy tắc tính điểm An ninh (1–5):** Điểm = $1 +$ số điều kiện thỏa mãn trong 4 tiêu chí: (1) Khóa cửa riêng, (2) Kiểm soát ra vào/bảo vệ, (3) Camera an ninh, (4) Đèn chiếu sáng lối đi.
   2. **Quy tắc tính điểm Tiện nghi (1–5):** Điểm = $1 +$ số điều kiện thỏa mãn trong 4 tiêu chí: (1) WC riêng, (2) Khu nấu ăn, (3) Có Wi-Fi, (4) Chỗ để xe máy an toàn.
@@ -105,7 +105,7 @@
      * Không trùng ID (`R01` đến `R30`).
      * Cột `source` ghi rõ `synthetic` (dữ liệu giả lập thực tế, bảo đảm tính liêm chính học thuật).
      * Mức giá, diện tích và khoảng cách sát với thực tế quanh trường ĐH Quốc Tế (VNU-HCM).
-* **Đầu ra:** File `data/README.md` cập nhật đầy đủ bảng từ điển dữ liệu (Data Dictionary) $\rightarrow$ Đưa vào **Chapter 3 của Report** và **Slide mở đầu của An (4 phút)**.
+* **Đầu ra:** File `data/README.md` cập nhật đầy đủ bảng từ điển dữ liệu (Data Dictionary) $\rightarrow$ Đưa vào **Chapter 3 của Report** và **Slide mở đầu**.
 
 ### 3.3. Trần Việt Trung — Kiểm thử Tự động & Phân tích Độ nhạy
 * **Mục đích:** Chứng minh chất lượng phần mềm, đảm bảo app không bao giờ crash khi demo và chứng minh thứ hạng thay đổi hợp lý khi đổi ưu tiên (Sensitivity Analysis).
@@ -118,7 +118,7 @@
      * Budget = 0 hoặc quá thấp (kết quả rỗng, không crash).
      * Toàn bộ 5 weights = 0 (báo lỗi hợp lệ).
      * File CSV thiếu cột hoặc sai định dạng (thông báo lỗi thân thiện).
-* **Đầu ra:** Các hàm test tự động trong `tests/`, chạy `unittest` ra PASS 100% $\rightarrow$ Chụp log test đưa vào **Chapter 6 của Report** và **Slide của Trung (5 phút)**.
+* **Đầu ra:** Các hàm test tự động trong `tests/`, chạy `unittest` ra PASS 100% $\rightarrow$ Chụp log test đưa vào **Chapter 6 của Report** và **Slide**.
 
 ### 3.4. Trần Khánh Tài — Kiến trúc App, Giao diện & Tính năng Nâng cao
 * **Mục đích:** Tạo ra một web app hoàn chỉnh, trực quan, chuyên nghiệp để người xem hiểu kết quả ngay trong 1 phút.
@@ -127,7 +127,7 @@
   2. **Import / Export CSV:** Xử lý upload file CSV mới và download kết quả đã xếp hạng kèm điểm TOPSIS.
   3. **Giao diện Top 3:** Hiển thị thẻ tóm tắt phòng nổi bật với badge và thông tin trực quan.
   4. **Tính năng nâng cao (Giai đoạn 2):** Cào dữ liệu web thật và tích hợp bản đồ cắm ghim tọa độ các phòng quanh trường.
-* **Đầu ra:** Ứng dụng Streamlit hoàn chỉnh $\rightarrow$ Chụp ảnh màn hình đưa vào **Chapter 5 của Report** và **Slide của Tài (5 phút)**.
+* **Đầu ra:** Ứng dụng Streamlit hoàn chỉnh $\rightarrow$ Chụp ảnh màn hình đưa vào **Chapter 5 của Report** và **Slide**.
 
 ---
 
