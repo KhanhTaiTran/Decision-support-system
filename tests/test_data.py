@@ -9,6 +9,11 @@ class DataTests(unittest.TestCase):
         self.assertEqual(len(rooms), 30)
         self.assertTrue(all(room['source'] == 'synthetic' for room in rooms))
 
+    def test_sample_ids_and_names(self):
+        rooms = load_rooms(Path(__file__).resolve().parents[1] / 'data' / 'rooms_sample.csv')
+        self.assertEqual([room['id'] for room in rooms], [f'R{i:02d}' for i in range(1, 31)])
+        self.assertEqual(len({room['name'] for room in rooms}), len(rooms))
+
     def test_duplicate_id_rejected(self):
         with TemporaryDirectory() as temp:
             path = Path(temp) / 'rooms.csv'
